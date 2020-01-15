@@ -1,0 +1,11 @@
+type Person {
+    id : String!
+    name : String!
+    age : Int!
+    gender : String!
+}
+
+type Query{
+    people : [Person]! #다수의 펄슨
+    person(id: Int!): Person # 하나의 펄슨에 접근하기 위해 ID 필요
+}
